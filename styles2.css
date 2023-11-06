@@ -1,0 +1,76 @@
+body {
+    background-color: #413839;
+    box-sizing: border-box;
+    display: grid;
+    font-family: ui-system, sans-serif;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    margin: 0;
+    padding: 12vh 1rem 2rem;
+    text-align: center;
+}
+
+main {
+    max-width: 42rem;
+    margin: 0 auto; 
+}
+
+img {
+    aspect-ratio: 1;
+    display: block;
+    margin: 0 auto; 
+    max-width: 14rem;
+}
+
+div {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    text-wrap: balance;
+    color: #fff;
+}
+
+main:has(+ footer > button:active) > :is(div, img) {
+    mix-blend-mode: color-burn;
+    filter: brightness(90%);
+}
+
+button {
+    background-color: #837E7C;
+    border: 0.125rem solid;
+    border-radius: 0.5rem;
+    color: #98AFC7;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+button:active {
+    color: #fff;
+}
+
+footer {
+    margin-block-start: 3rem;
+}
+
+p {
+    margin-block-start: 3rem;
+    margin-block-end: 0;
+}
+
+span {
+    color: red;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline; 
+}
+@media (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+}
